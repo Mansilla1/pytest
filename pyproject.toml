@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pytest-test"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Mansilla <dani@mail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.8"}
+fastapi-pagination = ">=0.12.34,<0.13.0"
+uvicorn = "^0.34.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.32.0"
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = ["src/"]
+
+[tool.pytest.ini_options]
+addopts = "--disable-warnings --cov=src --cov-report=html --cov-report=term-missing:skip-covered --cov-fail-under=85 -v"
+testpaths = ["tests"]
+python_files = "test.py test_*.py *_tests.py"
