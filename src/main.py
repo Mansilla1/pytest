@@ -15,6 +15,7 @@ async def heath_check():
 
 
 @router.get(
+    
     "/version",
     status_code=status.HTTP_200_OK,
     responses={
