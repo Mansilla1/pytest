@@ -63,6 +63,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coverage
-          path: ./htmlcov/
+          path: htmlcov/
           retention-days: 1  # If we want to check details we can set it to more days
           overwrite: true
