@@ -10,7 +10,7 @@ router = APIRouter()
     "/health",
     status_code=status.HTTP_200_OK,
 )
-async def heath_check():
+async def heath_check() -> dict[str, str]:
     return {"status": "ok"}
 
 
@@ -30,7 +30,7 @@ async def heath_check():
     summary="Retrieve application version",
     description="Fetches the application version from the `pyproject.toml` file.",
 )
-async def version_check():
+async def version_check() -> dict[str, str]:
     """
     Retrieve the application version.
 

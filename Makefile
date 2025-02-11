@@ -11,3 +11,10 @@ pre-commit: ## Run pre-commit hooks
 .PHONY: test
 test: ## Run tests
 	poetry run pytest
+
+.PHONY: talisman-report
+talisman-report: ## Run Talisman scan and serve the HTML report
+	@echo "Running Talisman security scan..."
+	@talisman --scanWithHtml || true
+	@echo "Starting local server for Talisman report..."
+	@cd talisman_html_report && python3 -m http.server 8080
