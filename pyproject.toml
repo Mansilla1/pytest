@@ -24,6 +24,9 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.coverage.run]
 source = ["src/"]
+omit = [
+    "tests/*",
+]
 
 [tool.pytest.ini_options]
 addopts = "--disable-warnings --cov=src --cov-report=html --cov-report=term-missing:skip-covered --cov-fail-under=80 -v"

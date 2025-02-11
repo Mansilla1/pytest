@@ -38,3 +38,7 @@ archive.zip
 
 # test
 .coverage
+
+# talisman
+talisman_html_report/
+talisman_report/
