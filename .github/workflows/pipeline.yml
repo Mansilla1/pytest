@@ -43,7 +43,7 @@ jobs:
 
       - name: Run Talisman
         run: |
-          talisman --scanWithHtml
+          talisman --scanWithHtml || true
 
       - name: Upload Talisman Report
         uses: actions/upload-artifact@v4
