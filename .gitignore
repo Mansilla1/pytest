@@ -42,3 +42,7 @@ archive.zip
 # talisman
 talisman_html_report/
 talisman_report/
+
+# Cyclomatic Complexity
+lizard-report.html
+radon-report.json

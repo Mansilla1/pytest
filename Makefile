@@ -34,3 +34,7 @@ talisman-report: ## Run Talisman scan and serve the HTML report
 	talisman --scanWithHtml || true
 	@echo "Starting local server for Talisman report..."
 	@cd talisman_html_report && python3 -m http.server 8081
+
+.PHONY: lizard-report
+lizard-report: ## Run Lizard scan and serve the HTML report
+	poetry run lizard -l python --output_file lizard-report.html src/
