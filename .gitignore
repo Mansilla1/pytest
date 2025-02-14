@@ -46,3 +46,4 @@ talisman_report/
 # Cyclomatic Complexity
 lizard-report.html
 radon-report.json
+wily_report/

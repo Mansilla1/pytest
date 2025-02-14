@@ -42,3 +42,7 @@ lizard-report: ## Run Lizard scan and serve the HTML report
 .PHONY: radon-report
 radon-report: ## Run Radon scan and serve the JSON report
 	poetry run radon cc -a -nb --json --output-file "radon-report.json" .
+
+.PHONY: wily-report
+wily-report: ## Run Wily scan and serve the HTML report
+	poetry run wily report src/ --format HTML
