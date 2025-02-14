@@ -2,13 +2,13 @@
 
 ## tl;dr
 
-|         |  being maintained |  pre-commit hook |  good documentation |  easy/simple to set up |  report file | current version |
-|---------|-------------------|-------------------------|---------------------|------------------------|--------------|-----------------|
-|    [Wily](https://github.com/tonybaloney/wily) |         ❌        |            ❌           |          ✅         |           ❌           |      ❌      |      1.25.0     |
-|   [Radon](https://github.com/rubik/radon) |         ✅        |     ✅ (using [xenon](https://github.com/rubik/xenon))    |          ❌         |           ✅           |      ✅      |      6.0.1      |
-| [Vulture](https://github.com/jendrikseipp/vulture) |         ✅        |            ✅           |          ✅         |           ✅           |      ❌      |       2.14      |
-|  [Lizard](https://github.com/terryyin/lizard) |         ✅        |            ❌           |          ✅         |           ✅           |      ✅      |     1.17.19     |
-|  [Pylint](https://github.com/pylint-dev/pylint) |         ✅        |            ❌           |          ✅         |           ✅           |      ✅      |      3.3.4      |
+|         |  being maintained |  pre-commit hook |  good documentation |  easy/simple to set up |  report file | current version | recommendation |
+|---------|-------------------|-------------------------|---------------------|------------------------|--------------|-----------------| -----------------|
+|    [Wily](https://github.com/tonybaloney/wily) |         ❌        |            ❌           |          ✅         |           ❌           |      ❌      |      1.25.0     | 😨 |
+|   [Radon](https://github.com/rubik/radon) |         ✅        |     ✅ (using [xenon](https://github.com/rubik/xenon))    |          ❌         |           ✅           |      ✅      |      6.0.1      | 😁 |
+| [Vulture](https://github.com/jendrikseipp/vulture) |         ✅        |            ✅           |          ✅         |           ✅           |      ❌      |       2.14      | 😄 |
+|  [Lizard](https://github.com/terryyin/lizard) |         ✅        |            ❌           |          ✅         |           ✅           |      ✅      |     1.17.19     | 😄 |
+|  [Pylint](https://github.com/pylint-dev/pylint) |         ✅        |            ❌           |          ✅         |           ✅           |      ✅      |      3.3.4      | 🙂 |
 
 ## Tools
 
