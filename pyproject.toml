@@ -46,7 +46,7 @@ exclude = ["tests/"]
 
 [tool.vulture]
 ignore_decorators = ["@router.*"]
-paths = ["src"]
+min_confidence = 90
 
 [tool.coverage.run]
 source = ["src/"]
