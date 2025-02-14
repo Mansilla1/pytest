@@ -44,8 +44,16 @@ jobs:
       - name: Run Xenon checker
         run: poetry run xenon src/
 
-      - name: Lizard report
+      - name: Lizard report generator
         run: poetry run lizard -l python --output_file lizard-report.html src/
+
+      - name: Lizard report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lizard-report
+          path: lizard-report.html
+          retention-days: 7
+          overwrite: true
 
   tests:
     runs-on: ubuntu-latest
