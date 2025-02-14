@@ -34,3 +34,12 @@ repos:
     hooks:
     - id: xenon
       args: ['--max-absolute=B', '--max-modules=B', '--max-average=A']
+
+  - repo: local
+    hooks:
+    - id: wily
+      name: wily
+      entry: poetry run wily diff --detail
+      verbose: true
+      language: python
+      additional_dependencies: [wily]
