@@ -38,6 +38,12 @@ jobs:
       - name: MyPy static type checker
         run: poetry run mypy src/
 
+      - name: Run Vulture checker
+        run: poetry run vulture src/ --min-confidence 90
+
+      - name: Run Xenon checker
+        run: poetry run xenon src/
+
   tests:
     runs-on: ubuntu-latest
 

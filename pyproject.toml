@@ -18,6 +18,11 @@ pytest-cov = "^6.0.0"
 pre-commit = "^4.1.0"
 ruff = "^0.9.6"
 mypy = "^1.15.0"
+radon = "^6.0.1"
+vulture = "^2.14"
+lizard = "^1.17.19"
+xenon = "^0.9.3"
+pylint = "^3.3.4"
 
 [build-system]
 requires = ["poetry-core"]
@@ -38,6 +43,10 @@ warn_return_any = true
 warn_unused_ignores = true
 warn_redundant_casts = true
 exclude = ["tests/"]
+
+[tool.vulture]
+ignore_decorators = ["@router.*"]
+paths = ["."]
 
 [tool.coverage.run]
 source = ["src/"]

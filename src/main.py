@@ -34,7 +34,8 @@ async def version_check() -> dict[str, str]:
     """
     Retrieve the application version.
 
-    Reads the `pyproject.toml` file to fetch the version specified under the `[tool.poetry]` section.
+    Reads the `pyproject.toml` file to fetch the version specified under the `[tool.poetry]`
+    section.
     """
     with open("pyproject.toml", "rb") as f:
         pyproject = tomllib.load(f)
