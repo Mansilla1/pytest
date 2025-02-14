@@ -72,6 +72,19 @@ make talisman-report
 ```
 This will generate a report and serve it locally on port 8080.
 
+### 🔹 **Cyclomatic Complexity reports**
+#### Lizard
+```shell
+make lizard-report
+```
+The output will be `./lizard-report.html`
+
+#### Radon
+```shell
+make radon-report
+```
+The output will be `./radon-report.html`
+
 ---
 
 ## 🏗️ **CI/CD Integration with GitHub Actions**

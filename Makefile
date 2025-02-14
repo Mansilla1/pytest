@@ -37,4 +37,8 @@ talisman-report: ## Run Talisman scan and serve the HTML report
 
 .PHONY: lizard-report
 lizard-report: ## Run Lizard scan and serve the HTML report
-	poetry run lizard -l python --output_file lizard-report.html src/
+	poetry run lizard -l python --output_file lizard-report.html . || true
+
+.PHONY: radon-report
+radon-report: ## Run Radon scan and serve the JSON report
+	poetry run radon cc -a -nb --json --output-file "radon-report.json" .

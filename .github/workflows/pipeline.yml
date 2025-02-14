@@ -42,7 +42,7 @@ jobs:
         run: poetry run vulture src/ --min-confidence 90
 
       - name: Run Xenon checker
-        run: poetry run xenon src/
+        run: poetry run xenon src/ --max-absolute=B --max-modules=B --max-average=B
 
       - name: Lizard report generator
         run: poetry run lizard -l python --output_file lizard-report.html src/
