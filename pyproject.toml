@@ -46,7 +46,6 @@ exclude = ["tests/"]
 
 [tool.vulture]
 ignore_decorators = ["@router.*"]
-paths = ["."]
 
 [tool.coverage.run]
 source = ["src/"]
